@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showAlert() {
+            var inputValue = document.getElementById('textInput').value;
+            alert('You entered: ' + inputValue);
+        }
+    </script>
+</head>
+<body>
+    <h1>Simple Form</h1>
+    <form id="myForm">
+        <label for="textInput">Enter text:</label>
+        <input type="text" id="textInput" name="textInput">
+        <button type="button" onclick="showAlert()">Show Alert</button>
+    </form>
+</body>
+</html>

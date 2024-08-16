@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Book {
+            constructor(title, author, publicationYear) {
+                this.title = title;
+                this.author = author;
+                this.publicationYear = publicationYear;
+            }
+            displayDetails() {
+                console.log(`Title: ${this.title}`);
+                console.log(`Author: ${this.author}`);
+                console.log(`Publication Year: ${this.publicationYear}`);
+            }
+        }
+
+        const myBook = new Book('To Kill a Mockingbird', 'Harper Lee', 1960);
+        myBook.displayDetails();
+    </script>
+</head>
+<body>
+    <h1>Book Details</h1>
+    <p>Open the console to see the book details.</p>
+</body>
+</html>
